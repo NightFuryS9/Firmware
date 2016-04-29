@@ -211,7 +211,7 @@ PARAM_DEFINE_FLOAT(EKF2_REQ_VDRIFT, 0.5f);
  * @unit rad/s
  * @decimal 4
  */
-PARAM_DEFINE_FLOAT(EKF2_GYR_NOISE, 6.0e-2f);
+PARAM_DEFINE_FLOAT(EKF2_GYR_NOISE, 5.0e-2f);
 
 /**
  * Accelerometer noise for covariance prediction.
@@ -231,30 +231,20 @@ PARAM_DEFINE_FLOAT(EKF2_ACC_NOISE, 0.25f);
  * @min 0.0
  * @max 0.0001
  * @unit rad/s
- * @decimal 8
+ * @decimal 7
  */
-PARAM_DEFINE_FLOAT(EKF2_GYR_B_NOISE, 2.5e-6f);
+PARAM_DEFINE_FLOAT(EKF2_GYR_B_NOISE, 5.0e-5f);
 
 /**
- * Process noise for delta velocity z bias prediction.
+ * Process noise for delta velocity prediction.
  *
  * @group EKF2
  * @min 0.0
  * @max 0.01
  * @unit m/s/s
- * @decimal 7
+ * @decimal 8
  */
-PARAM_DEFINE_FLOAT(EKF2_ACC_B_NOISE, 3.0e-5f);
-
-/**
- * Process noise for delta angle scale factor prediction.
- *
- * @group EKF2
- * @min 0.0
- * @max 0.01
- * @decimal 6
- */
-PARAM_DEFINE_FLOAT(EKF2_GYR_S_NOISE, 3.0e-4f);
+PARAM_DEFINE_FLOAT(EKF2_ACC_B_NOISE, 1.0e-7f);
 
 /**
  * Process noise for body magnetic field prediction.
@@ -265,7 +255,7 @@ PARAM_DEFINE_FLOAT(EKF2_GYR_S_NOISE, 3.0e-4f);
  * @unit Gauss/s
  * @decimal 6
  */
-PARAM_DEFINE_FLOAT(EKF2_MAG_B_NOISE, 5.0e-4f);
+PARAM_DEFINE_FLOAT(EKF2_MAG_B_NOISE, 1.0e-4f);
 
 /**
  * Process noise for earth magnetic field prediction.
@@ -419,8 +409,7 @@ PARAM_DEFINE_INT32(EKF2_DECL_TYPE, 7);
  * @value 0 Automatic
  * @value 1 Magnetic heading
  * @value 2 3-axis fusion
- * @value 3 2-D projection
- * @value 4 None
+ * @value 3 None
  */
 PARAM_DEFINE_INT32(EKF2_MAG_TYPE, 0);
 
