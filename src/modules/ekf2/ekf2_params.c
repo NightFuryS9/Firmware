@@ -211,7 +211,7 @@ PARAM_DEFINE_FLOAT(EKF2_REQ_VDRIFT, 0.5f);
  * @unit rad/s
  * @decimal 4
  */
-PARAM_DEFINE_FLOAT(EKF2_GYR_NOISE, 5.0e-2f);
+PARAM_DEFINE_FLOAT(EKF2_GYR_NOISE, 2.0e-2f);
 
 /**
  * Accelerometer noise for covariance prediction.
@@ -222,7 +222,7 @@ PARAM_DEFINE_FLOAT(EKF2_GYR_NOISE, 5.0e-2f);
  * @unit m/s/s
  * @decimal 2
  */
-PARAM_DEFINE_FLOAT(EKF2_ACC_NOISE, 0.25f);
+PARAM_DEFINE_FLOAT(EKF2_ACC_NOISE, 2.5e-1f);
 
 /**
  * Process noise for delta angle bias prediction.
@@ -233,7 +233,7 @@ PARAM_DEFINE_FLOAT(EKF2_ACC_NOISE, 0.25f);
  * @unit rad/s
  * @decimal 7
  */
-PARAM_DEFINE_FLOAT(EKF2_GYR_B_NOISE, 5.0e-5f);
+PARAM_DEFINE_FLOAT(EKF2_GYR_B_NOISE, 5.0e-6f);
 
 /**
  * Process noise for delta velocity prediction.
@@ -266,7 +266,7 @@ PARAM_DEFINE_FLOAT(EKF2_MAG_B_NOISE, 1.0e-4f);
  * @unit Gauss/s
  * @decimal 6
  */
-PARAM_DEFINE_FLOAT(EKF2_MAG_E_NOISE, 2.5e-3f);
+PARAM_DEFINE_FLOAT(EKF2_MAG_E_NOISE, 1.0e-3f);
 
 /**
  * Process noise for wind velocity prediction.
