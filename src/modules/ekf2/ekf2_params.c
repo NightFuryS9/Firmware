@@ -225,26 +225,26 @@ PARAM_DEFINE_FLOAT(EKF2_GYR_NOISE, 2.0e-2f);
 PARAM_DEFINE_FLOAT(EKF2_ACC_NOISE, 2.5e-1f);
 
 /**
- * Process noise for delta angle bias prediction.
- *
- * @group EKF2
- * @min 0.0
- * @max 0.0001
- * @unit rad/s
- * @decimal 7
- */
-PARAM_DEFINE_FLOAT(EKF2_GYR_B_NOISE, 5.0e-6f);
-
-/**
- * Process noise for delta velocity prediction.
+ * Process noise for IMU rate gyro bias prediction.
  *
  * @group EKF2
  * @min 0.0
  * @max 0.01
- * @unit m/s/s
- * @decimal 8
+ * @unit rad/s**2
+ * @decimal 6
  */
-PARAM_DEFINE_FLOAT(EKF2_ACC_B_NOISE, 1.0e-7f);
+PARAM_DEFINE_FLOAT(EKF2_GYR_B_NOISE, 1.0e-3f);
+
+/**
+ * Process noise for IMU accelerometer bias prediction.
+ *
+ * @group EKF2
+ * @min 0.0
+ * @max 0.01
+ * @unit m/s**3
+ * @decimal 6
+ */
+PARAM_DEFINE_FLOAT(EKF2_ACC_B_NOISE, 1.0e-5f);
 
 /**
  * Process noise for body magnetic field prediction.
