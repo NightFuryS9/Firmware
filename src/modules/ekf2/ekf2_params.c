@@ -244,7 +244,7 @@ PARAM_DEFINE_FLOAT(EKF2_GYR_B_NOISE, 1.0e-3f);
  * @unit m/s**3
  * @decimal 6
  */
-PARAM_DEFINE_FLOAT(EKF2_ACC_B_NOISE, 1.0e-5f);
+PARAM_DEFINE_FLOAT(EKF2_ACC_B_NOISE, 1.0e-3f);
 
 /**
  * Process noise for body magnetic field prediction.
@@ -467,7 +467,7 @@ PARAM_DEFINE_INT32(EKF2_REC_RPL, 0);
  * @min 0
  * @max 15
  */
-PARAM_DEFINE_INT32(EKF2_AID_MASK, 1);
+PARAM_DEFINE_INT32(EKF2_AID_MASK, 9);
 
 /**
  * Determines the primary source of height data used by the EKF.
