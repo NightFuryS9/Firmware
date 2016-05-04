@@ -461,13 +461,13 @@ PARAM_DEFINE_INT32(EKF2_REC_RPL, 0);
  * 0 : Set to true to use GPS data if available
  * 1 : Set to true to use optical flow data if available
  *
- * 3 : Set to true to estimate bias errors for all IMU axes, set to false to estimate only Z
+ * 3 : Set to true to inhibit IMU bias estimation
  *
  * @group EKF2
  * @min 0
  * @max 15
  */
-PARAM_DEFINE_INT32(EKF2_AID_MASK, 9);
+PARAM_DEFINE_INT32(EKF2_AID_MASK, 1);
 
 /**
  * Determines the primary source of height data used by the EKF.
