@@ -460,8 +460,7 @@ PARAM_DEFINE_INT32(EKF2_REC_RPL, 0);
  * Set bits in the following positions to enable:
  * 0 : Set to true to use GPS data if available
  * 1 : Set to true to use optical flow data if available
- *
- * 3 : Set to true to inhibit IMU bias estimation
+ * 2 : Set to true to inhibit IMU bias estimation
  *
  * @group EKF2
  * @min 0
