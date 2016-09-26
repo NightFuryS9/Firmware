@@ -50,6 +50,7 @@
 #include <poll.h>
 #include <time.h>
 #include <drivers/drv_hrt.h>
+
 #include <uORB/uORB.h>
 #include <uORB/topics/vehicle_global_position.h>
 #include <uORB/topics/position_setpoint_triplet.h>
@@ -60,6 +61,7 @@
 #include <uORB/topics/actuator_controls.h>
 #include <uORB/topics/vehicle_global_position.h>
 #include <uORB/topics/parameter_update.h>
+
 #include <systemlib/param/param.h>
 #include <systemlib/pid/pid.h>
 #include <geo/geo.h>
